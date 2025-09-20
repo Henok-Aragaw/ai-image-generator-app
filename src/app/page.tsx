@@ -1,5 +1,4 @@
 import { 
-  ArrowLeft,
   ArrowRight,
   CheckCircle2,
   Download,
@@ -52,29 +51,29 @@ const HomePage = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      name: "Sarah Chen",
-      role: "Graphic Designer",
-      content:
-        "This tool has revolutionized my workflow. Background removal that used to take hours now takes seconds!",
-      rating: 5,
-    },
-    {
-      name: "Marcus Johnson",
-      role: "E-commerce Owner",
-      content:
-        "Perfect for product photography. The AI upscaling feature makes my images look professional.",
-      rating: 5,
-    },
-    {
-      name: "Emma Rodriguez",
-      role: "Content Creator",
-      content:
-        "The object cropping feature is incredible. It knows exactly what I want to focus on.",
-      rating: 5,
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     name: "Sarah Chen",
+  //     role: "Graphic Designer",
+  //     content:
+  //       "This tool has revolutionized my workflow. Background removal that used to take hours now takes seconds!",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Marcus Johnson",
+  //     role: "E-commerce Owner",
+  //     content:
+  //       "Perfect for product photography. The AI upscaling feature makes my images look professional.",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Emma Rodriguez",
+  //     role: "Content Creator",
+  //     content:
+  //       "The object cropping feature is incredible. It knows exactly what I want to focus on.",
+  //     rating: 5,
+  //   },
+  // ];
 
   const pricingFeatures = [
     "AI Background Removal",
