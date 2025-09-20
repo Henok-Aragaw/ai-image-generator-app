@@ -1,6 +1,8 @@
 import { 
   ArrowLeft,
   ArrowRight,
+  CheckCircle2,
+  Download,
   Expand, 
   ImageIcon, 
   Play, 
@@ -92,7 +94,7 @@ const HomePage = () => {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
                 <Sparkle className="h-5 w-5 text-white" />
               </div>
-              <span className="bg-gradient-to-r from-blue-600 to bg-purple-600 bg-clip-text text-xl font-bold text-transparent font-sans">Pixora</span>
+              <span className="bg-gradient-to-r from-blue-600 to bg-purple-600 bg-clip-text text-xl font-bold text-transparent font-heading">Pixora</span>
             </div>
             
             <div className="hidden items-center space-x-8 md:flex">
@@ -141,14 +143,14 @@ const HomePage = () => {
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-200/60 bg-blue-100/30 px-4 py-2 text-sm">
               <Sparkles className="h-4 w-4 text-blue-600"/>
-              <span className="font-medium text-blue-700 font-sans">
+              <span className="font-medium text-blue-700 font-heading">
                 Powered by Advanced AI
               </span>
             </div>
 
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-800 sm:text-6xl font-heading">
               Transform Images {" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-sans">AI Magic</span>
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI Magic</span>
             </h1>
 
             <p className="mx-auto mb-10 max-w-2xl text-slate-600 sm:text-xl font-sans">
@@ -220,7 +222,7 @@ const HomePage = () => {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl font-heading">
               Powerful AI Tools at Your {" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-sans">Fingertips</span>
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-heading">Fingertips</span>
             </h2>
             <p className="mt-4 text-lg text-slate-600 font-sans">
               Everything you need to create stunning images with the power of
@@ -251,7 +253,246 @@ const HomePage = () => {
       </section>
 
       {/* How it works section */}
-      
+      <section className="bg-slate-50 py-20 sm:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-16 max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl font-heading">
+              Simple. Fast. Professional.
+            </h2>
+            <p className="mt-4 text-lg text-slate-600 font-sans">
+              Get professional results in three simple steps
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+              {
+                step: "01",
+                title: "Upload Your Image",
+                description:
+                  "Drag and drop or select your image. We support all major formats including JPG, PNG, and WebP.",
+              },
+              {
+                step: "02",
+                title: "Choose AI Tools",
+                description:
+                  "Select from our powerful AI tools: background removal, upscaling, or object-focused cropping.",
+              },
+              {
+                step: "03",
+                title: "Download Results",
+                description:
+                  "Get your professionally edited image in seconds. High-quality results ready for any use.",
+              },
+            ].map((item, index) => (
+              <div key={index} className="relative">
+                <div className="mb-4 flex items-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-lg font-bold text-white shadow-lg font-sans">
+                    {item.step}
+                  </div>
+                  {index < 2 && (
+                    <div className="ml-4 hidden h-0.5 w-full bg-slate-300 md:block" />
+                  )}
+                </div>
+                <h3 className="mb-2 text-xl font-semibold text-slate-800 font-heading">
+                  {item.title}
+                </h3>
+                <p className="text-slate-600 font-sans">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+            {/* Pricing Section */}
+      <section
+        id="pricing"
+        className="bg-gradient-to-br from-slate-50 to-blue-50/50 py-20 sm:py-32"
+      >
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-16 max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl font-heading">
+              Start Creating{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-heading">
+                For Free
+              </span>
+            </h2>
+            <p className="mt-4 text-lg text-slate-600 font-sans">
+              No credit card required. Begin transforming your images instantly.
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-lg">
+            <Card className="relative overflow-hidden border-2 border-blue-300 bg-white/70 backdrop-blur-sm">
+              <div className="absolute top-0 right-0 bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-1 text-sm font-medium text-white">
+                Free to Start
+              </div>
+              <CardContent className="p-8">
+                <div className="mb-8 text-center">
+                  <h3 className="text-2xl font-bold text-slate-800 font-heading">
+                    Free Plan
+                  </h3>
+                  <div className="mt-4 flex items-baseline justify-center">
+                    <span className="text-5xl font-bold text-slate-800">
+                      $0
+                    </span>
+                    <span className="ml-2 text-slate-600">to start</span>
+                  </div>
+                  <p className="mt-2 text-slate-600">
+                    Try all features with free credits
+                  </p>
+                </div>
+
+                <ul className="mb-8 space-y-4">
+                  {pricingFeatures.map((feature, index) => (
+                    <li key={index} className="flex items-center gap-3">
+                      <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-emerald-500" />
+                      <span className="text-sm text-slate-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Link href="/dashboard">
+                  <Button
+                    className="w-full cursor-pointer gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+                    size="lg"
+                  >
+                    <Sparkles className="h-4 w-4" />
+                    Try It Free Now
+                  </Button>
+                </Link>
+
+                <p className="mt-4 text-center text-xs text-slate-500">
+                  Includes 10 free credits • No credit card required
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+            {/* CTA Section */}
+      <section className="bg-gradient-to-r from-blue-100/70 to-purple-100/70 py-20 sm:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl font-heading">
+              Ready to Transform Your Images?
+            </h2>
+            <p className="mt-4 text-lg text-slate-600 font-sans">
+              Join thousands of creators using AI to enhance their visual
+              content
+            </p>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
+              <Link href="/dashboard">
+                <Button
+                  size="lg"
+                  className="cursor-pointer gap-2 bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-6 text-base hover:from-blue-600 hover:to-purple-700"
+                >
+                  <Sparkles className="h-5 w-5" />
+                  Try It Free Now
+                </Button>
+              </Link>
+              <Link href="/dashboard">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="cursor-pointer gap-2 border-slate-300 px-8 py-6 text-base text-slate-700 hover:bg-slate-100"
+                >
+                  <Download className="h-5 w-5" />
+                  View Examples
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <footer className="border-t border-slate-200 bg-slate-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="py-16">
+            <div className="grid gap-8 md:grid-cols-4">
+              <div className="md:col-span-2">
+                <div className="mb-4 flex items-center gap-2">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
+                    <Sparkles className="h-5 w-5 text-white" />
+                  </div>
+                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-xl font-bold text-transparent font-heading">
+                    Pixora
+                  </span>
+                </div>
+                <p className="max-w-md text-slate-600 font-sans">
+                  Professional image editing powered by artificial intelligence.
+                  Transform your images with cutting-edge AI technology.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-4 font-semibold text-slate-800 font-heading">Product</h3>
+                <ul className="space-y-3 text-sm text-slate-600">
+                  <li>
+                    <Link
+                      href="#features"
+                      className="transition-colors hover:text-blue-600"
+                    >
+                      Features
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#pricing"
+                      className="transition-colors hover:text-blue-600"
+                    >
+                      Pricing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/dashboard"
+                      className="transition-colors hover:text-blue-600"
+                    >
+                      Dashboard
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="mb-4 font-semibold text-slate-800 font-heading">Support</h3>
+                <ul className="space-y-3 text-sm text-slate-600">
+                  <li>
+                    <Link
+                      href="#"
+                      className="transition-colors hover:text-blue-600"
+                    >
+                      Help Center
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="transition-colors hover:text-blue-600"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="transition-colors hover:text-blue-600"
+                    >
+                      Privacy
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-16 border-t border-slate-200 pt-8 text-center text-sm text-slate-500">
+              <p>&copy; 2025 AI Image Editor. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
