@@ -1,6 +1,7 @@
 import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import { Toaster } from "~/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Pixora",
@@ -23,7 +24,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Toaster />
+        </body>
     </html>
   );
 }
