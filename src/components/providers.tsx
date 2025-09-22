@@ -39,8 +39,7 @@ export function Providers({ children }: { children: ReactNode }) {
       console.error("session check failed", error);
     }
   };
-
-  // Run once on initial page load/refresh
+ 
   useEffect(() => {
     void enforceRouteProtection();
   }, []);
