@@ -1,8 +1,29 @@
-import React from 'react'
+"use client"
+
+import { usePathname } from "next/navigation"
+import { BreadcrumbPage } from "../ui/breadcrumb";
 
 const BreadCrumbClient = () => {
+const path = usePathname();
+
+const getPageTitle = (path:string) => {
+  switch (path){
+    case '/dashboard':
+      return "Dashboard"
+    case "/dashboard/create":
+      return "Create"
+    case "/dashboard/projects":
+      return "Projects"
+    case "/dashboard/settings":
+       return "Settings"
+     default:
+      return "Dashboard"
+  }
+}
   return (
-    <div>BreadCrumbClient</div>
+    <BreadcrumbPage className="text-foreground text-sm font-medium font-sans">
+     {getPageTitle(path)}
+    </BreadcrumbPage>
   )
 }
 
