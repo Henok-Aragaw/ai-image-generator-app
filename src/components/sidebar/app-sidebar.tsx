@@ -23,7 +23,6 @@ const AppSidebar = () => {
                             Pixora
                         </p>
                     </Link>
-                    <p className='text-muted-foreground ml-8 text-sm font-medium tracking-wide'>Editor</p>
                 </SidebarGroupLabel>
                 <SidebarGroupContent>
                     <SidebarMenu className='space-y-1'>
