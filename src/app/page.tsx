@@ -1,17 +1,3 @@
-import { 
-  ArrowRight,
-  CheckCircle2,
-  Download,
-  Expand, 
-  ImageIcon, 
-  Play, 
-  Scissors, 
-  Sparkle, 
-  Sparkles, 
-  Target, 
-  Zap 
-} from "lucide-react"
-import Link from "next/link";
 import CtaSection from "~/components/cta";
 import FeatureSection from "~/components/feature";
 import FooterSection from "~/components/footer";
@@ -19,8 +5,6 @@ import GuidSection from "~/components/guid";
 import HeroSection from "~/components/hero";
 import NavBar from "~/components/nav-bar";
 import PricingSection from "~/components/pricing";
-import { Button } from "~/components/ui/button"
-import { Card, CardContent } from "~/components/ui/card"
 
 const HomePage = () => {
 
