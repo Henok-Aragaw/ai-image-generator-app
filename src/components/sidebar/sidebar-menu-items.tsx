@@ -25,7 +25,7 @@ const SidebarMenuItems = () => {
         },
         {
             title:"Project",
-            url:"/dashboard/project",
+            url:"/dashboard/projects",
             icon:FolderOpen,
             active:false
         },
