@@ -1,6 +1,6 @@
 "use client";
 
-import { AccountSettingsCards, DeleteAccountCard, RedirectToSignIn, SecuritySettingsCards, SignedIn, UpdateAvatarCard } from "@daveyplate/better-auth-ui";
+import { AccountSettingsCards, DeleteAccountCard, RedirectToSignIn, SecuritySettingsCards, SignedIn, } from "@daveyplate/better-auth-ui";
 import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react"
 import { authClient } from "~/lib/auth-client";
