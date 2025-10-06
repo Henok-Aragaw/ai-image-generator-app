@@ -23,6 +23,8 @@ const spaceGrotesk = Space_Grotesk({
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+      
+
   return (
     <html lang="en" className={`dark ${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
       <body>

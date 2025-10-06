@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
 import { Button } from '~/components/ui/button'
 import Image from 'next/image'
 import { TextEffect } from '~/components/ui/text-effect'
@@ -27,7 +26,9 @@ const transitionVariants = {
     },
 }
 
+
 export default function HeroSection() {
+
     return (
         <>
             <HeroHeader />
@@ -48,8 +49,8 @@ export default function HeroSection() {
                                     preset="fade-in-blur"
                                     speedSegment={0.3}
                                     as="h1"
-                                    className="mt-8 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16">
-                                    Build and Ship 10x faster with NS
+                                    className="mt-8 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16 font-heading">
+                                   Pixora AI-Powered Image Magic
                                 </TextEffect>
                                 <TextEffect
                                     per="line"
@@ -57,8 +58,8 @@ export default function HeroSection() {
                                     speedSegment={0.3}
                                     delay={0.5}
                                     as="p"
-                                    className="mt-8 max-w-2xl text-pretty text-lg">
-                                    Tailwindcss highly customizable components for building modern websites and applications that look and feel the way you mean it.
+                                    className="mt-8 max-w-2xl text-pretty text-lg font-sans">
+                                    Create, enhance, and download high-quality images instantly with the power of smart AI and lightning-fast performance.
                                 </TextEffect>
 
                                 <AnimatedGroup

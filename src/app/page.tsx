@@ -38,11 +38,11 @@ const HomePage = () => {
       {/* feature section */}
       <FeaturesSection />
       {/* How it works section */}
-      <GuidSection />
+      {/* <GuidSection /> */}
       {/* Pricing Section */}
       <PricingSection />
       {/* CTA Section */}
-      <CtaSection />
+      {/* <CtaSection /> */}
       {/* Footer Section */}
       <FooterSection />
     </div>
