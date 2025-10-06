@@ -1,9 +1,8 @@
 import CtaSection from "~/components/cta";
-import FeatureSection from "~/components/feature";
+import FeaturesSection from "~/components/features-8";
 import FooterSection from "~/components/footer";
 import GuidSection from "~/components/guid";
-import HeroSection from "~/components/hero";
-import NavBar from "~/components/nav-bar";
+import HeroSection from "~/components/hero-section";
 import PricingSection from "~/components/pricing";
 
 const HomePage = () => {
@@ -35,13 +34,9 @@ const HomePage = () => {
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/20 to-slate-100">
-      {/* Navbar */}
-      <NavBar />
-      {/* hero section */}
       <HeroSection />
       {/* feature section */}
-      <FeatureSection />
-
+      <FeaturesSection />
       {/* How it works section */}
       <GuidSection />
       {/* Pricing Section */}

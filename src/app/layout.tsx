@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { Toaster } from "~/components/ui/sonner";
+import { ThemeProvider } from "~/hooks/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Pixora",
@@ -23,11 +24,18 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={`dark ${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
       <body>
-        {children}
-        <Toaster />
-        </body>
+        <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+        >
+          {children}
+          <Toaster />
+          </ThemeProvider>
+      </body>
     </html>
   );
 }
