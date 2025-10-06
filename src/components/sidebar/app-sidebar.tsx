@@ -43,7 +43,7 @@ const AppSidebar = () => {
              additionalLinks={[
                 {
                     label:"Customer Portal",
-                    href:'/dahsboard/customer-portal',
+                    href:'/dashboard/customer-portal',
                     icon:<User className='h-4 w-4'/>
                 },
                 {
