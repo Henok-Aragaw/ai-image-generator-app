@@ -36,7 +36,6 @@ interface CreateProjectData {
   name?: string;
 }
 
-
 interface UploadResponse {
   fileId: string;
   name: string;
@@ -46,4 +45,21 @@ interface UploadResponse {
   height?: number;
   width?: number;
   size: number;
+}
+
+interface Project {
+  id: string,
+  name: string | null,
+  imageUrl: string,
+  imageKitId: string,
+  filePath: string,
+  userId: string,
+  createdAt: Date,
+  updatedAt: Date
+}
+
+interface UserStats {
+  totalProjects: number;
+  thisMonth: number;
+  thisWeek: number;
 }
