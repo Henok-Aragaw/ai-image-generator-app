@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function AuthLayout({ children }: { children: ReactNode }) {
   return (
     <Providers>
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen ">
         {/* Left Side - Branding */}
         <div className="relative hidden overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 lg:flex lg:w-1/2">
           <div className="bg-grid-white/[0.1] absolute inset-0 bg-[size:30px_30px]" />
@@ -91,7 +91,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
         </div>
 
         {/* Right Side - Auth Form */}
-        <div className="flex flex-1 flex-col justify-center bg-gradient-to-br from-slate-50 to-blue-50/30 px-6 py-12 lg:px-8">
+        <div className="flex flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
             {/* Mobile Logo */}
             <div className="mb-8 text-center lg:hidden">

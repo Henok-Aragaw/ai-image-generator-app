@@ -48,7 +48,7 @@ const AppSidebar = () => {
                 },
                 {
                     label:'Settings',
-                    href:'/dahsboard/settings',
+                    href:'/dashboard/settings',
                     icon:<Settings className='h-4 w-4'/>
                 }
              ]}
