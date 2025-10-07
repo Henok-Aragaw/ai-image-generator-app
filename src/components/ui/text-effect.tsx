@@ -172,7 +172,6 @@ const createVariantsWithTransition = (
 ): Variants => {
   if (!transition) return baseVariants;
 
-  // ✅ remove unused variable `_`
   const { exit, ...mainTransition } = transition;
 
   return {
