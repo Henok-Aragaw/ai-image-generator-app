@@ -43,17 +43,16 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
 						<FloatingPaths position={-1} />
 					</div>
 				</div>
-
 				{/* Right Side - Auth Form */}
 				<div className="flex flex-1 flex-col justify-center px-6 py-12 lg:px-16 bg-background relative z-10">
 					<div className="sm:mx-auto sm:w-full sm:max-w-md">
 						{/* Mobile Logo */}
 						<div className="mb-8 text-center lg:hidden">
 							<Link href="/" className="inline-flex items-center gap-2">
-								<div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
+								<div className="flex h-10 w-10 items-center justify-center rounded-lg shadow-lg">
 									<Sparkles className="h-6 w-6 text-white" />
 								</div>
-								<span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-xl font-bold text-transparent font-heading">
+								<span className="bg-clip-text text-xl font-bold font-heading">
 									Pixora
 								</span>
 							</Link>
