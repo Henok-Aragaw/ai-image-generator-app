@@ -332,7 +332,7 @@ export default function CreatePage() {
       <SignedIn>
         <div className="min-h-screen">
           {/* Top Navbar - Ultra Compact */}
-          <div className="border-b border-gray-200 bg-white py-2">
+          <div className="border-b border-background-200 bg-background py-2">
             <div className="mx-auto max-w-7xl text-center">
               <h1 className="from-primary to-primary/70 mb-1 bg-gradient-to-r bg-clip-text text-lg font-bold text-transparent">
                 Create AI Images
@@ -720,12 +720,12 @@ export default function CreatePage() {
               </div>
             )}
           </div>
-          <div className="border-t border-gray-200 bg-white px-2 py-3 sm:px-4 sm:py-4">
+          <div className="border-t border-background-200 bg-background px-2 py-3 sm:px-4 sm:py-4">
             <div className="mx-auto max-w-7xl">
               <div className="mb-6 text-center">
                 <div className="mb-2 inline-flex items-center gap-2">
                   <div className="h-6 w-0.5 rounded-full bg-gradient-to-b from-blue-500 to-purple-600"></div>
-                  <h2 className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-xl font-bold text-transparent">
+                  <h2 className="bg-gradient-to-r from-gray-700 to-gray-300 bg-clip-text text-xl font-bold text-transparent">
                     Your Recent Projects
                   </h2>
                   <div className="h-6 w-0.5 rounded-full bg-gradient-to-b from-purple-600 to-blue-500"></div>
