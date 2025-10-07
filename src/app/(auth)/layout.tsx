@@ -50,7 +50,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
 						<div className="mb-8 text-center lg:hidden">
 							<Link href="/" className="inline-flex items-center gap-2">
 								<div className="flex h-10 w-10 items-center justify-center rounded-lg shadow-lg">
-									<Sparkles className="h-6 w-6 text-white" />
+									<Sparkles className="h-6 w-6" />
 								</div>
 								<span className="bg-clip-text text-xl font-bold font-heading">
 									Pixora
