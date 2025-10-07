@@ -1,7 +1,5 @@
-import CtaSection from "~/components/cta";
 import FeaturesSection from "~/components/features-8";
 import FooterSection from "~/components/footer";
-import GuidSection from "~/components/guid";
 import HeroSection from "~/components/hero-section";
 import PricingSection from "~/components/pricing";
 
