@@ -864,7 +864,7 @@ export default function CreatePage() {
               </div>
 
               <div className="space-y-3">
-                <h3 className="text-xl font-bold text-gray-900">
+                <h3 className="text-xl font-bold text-gray-400">
                   No projects yet
                 </h3>
                 <p className="text-muted-foreground mx-auto max-w-md text-lg leading-relaxed">
